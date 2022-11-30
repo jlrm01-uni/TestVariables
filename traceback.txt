@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    $ love(10)
+  File "game/script.rpy", line 23, in <module>
+    $ love(10)
+  File "game/script.rpy", line 8, in love
+    romance_points = romance_points + how_much
+UnboundLocalError: local variable 'romance_points' referenced before assignment
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    $ love(10)
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\python.py", line 1052, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 23, in <module>
+    $ love(10)
+  File "game/script.rpy", line 8, in love
+    romance_points = romance_points + how_much
+UnboundLocalError: local variable 'romance_points' referenced before assignment
+
+Windows-10-10.0.22000 AMD64
+Ren'Py 8.0.2.22081402
+TestVariables 1.0
+Wed Sep 28 11:30:30 2022
